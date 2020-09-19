@@ -14,10 +14,11 @@
       rel="stylesheet"
     />
     <link href="asset/css/style.css" rel="stylesheet" />
+    <link href="asset/css/media.css" rel="stylesheet" />
     <title>Zwallet - Payment Gateway</title>
   </head>
   <body>
-    <div class="container container-login">
+    <main class="container container-login" id="main-login">
       <div class="row">
         <div class="col-md-7 left">
           <div class="left-item">
@@ -25,7 +26,7 @@
             <div class="mt-5 image-container">
               <img src="asset/img/phone.png" alt="phone" />
             </div>
-            <div class="left-content">
+            <section class="left-content">
               <h2>App that Covering Banking Needs.</h2>
               <p>
                 Zwallet is an application that focussing in banking needs for
@@ -33,20 +34,22 @@
                 world trends. 5000+ users registered in Zwallet everyday with
                 worldwide users coverage.
               </p>
-            </div>
+            </section>
           </div>
         </div>
         <div class="col-md-5">
           <div class="right-item">
-            <h2 class="item-header">
-              Start Accessing Banking Needs With All Devices and All Platforms
-              With 30.000+ Users
-            </h2>
-            <p class="item-description mt-4">
-              Transfering money is eassier than ever, you can access Zwallet
-              wherever you are. Desktop, laptop, mobile phone? we cover all of
-              that for you!
-            </p>
+            <section>
+              <h2 class="item-header">
+                Start Accessing Banking Needs With All Devices and All Platforms
+                With 30.000+ Users
+              </h2>
+              <p class="item-description mt-4">
+                Transfering money is eassier than ever, you can access Zwallet
+                wherever you are. Desktop, laptop, mobile phone? we cover all of
+                that for you!
+              </p>
+            </section>
             <form class="item-form mt-5" method="POST">
               <div class="mb-5 form-group">
                 <div class="input-group">
@@ -85,7 +88,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
