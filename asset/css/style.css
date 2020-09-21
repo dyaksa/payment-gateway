@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+/*=====================*/
+/*LOGIN PAGE STYLESHEET*/
+/*=====================*/
 * {
   margin: 0;
   padding: 0;
@@ -109,4 +112,193 @@ body {
 .signup-text p {
   color: rgba(58, 61, 66, 0.8);
   text-align: center;
+}
+/*END LOGIN PAGE STYLESHEET*/
+
+.bg-white {
+  padding: 25px 150px;
+  box-shadow: #00000033 2px 0 15px;
+  justify-content: space-between;
+}
+
+.header_image__profile {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.info__profile span {
+  display: block;
+  color: rgba(58, 61, 66, 0.9);
+}
+
+.info__profile span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info__profile span:last-child {
+  font-size: 13px;
+}
+
+.sidenav {
+  box-shadow: #00000033 2px 0 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.nav__item {
+  list-style: none;
+  padding: 30px 0px 20px 35px;
+}
+
+.nav__signout {
+  padding: 30px 0px 30px 35px;
+  width: 100%;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav__signout i.fa {
+  margin-right: 20px;
+}
+
+.nav__signout a {
+  color: rgba(58, 61, 66, 0.8);
+}
+
+.nav__signout a:hover {
+  color: #6379f4;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav__item i.fa {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.nav__item a {
+  color: rgba(58, 61, 66, 0.8);
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav__item a:hover {
+  text-decoration: none;
+  color: #6379f4;
+  transition: 0.5s;
+}
+
+.info__balance {
+  background: #6379f4;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.balance h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.balance span {
+  font-size: 14px;
+}
+
+.btn__action button {
+  color: white;
+  border-color: #fff;
+}
+
+.right__info {
+  box-shadow: #00000033 2px 0 15px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.salary__info {
+  text-align: left;
+}
+
+.salary__info p {
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+.salary__info h6 {
+  color: #3a3d42;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.income__info i.fa-arrow-down {
+  color: green;
+}
+
+.expense__info i.fa-arrow-up {
+  color: red;
+}
+
+.transaction__info {
+  box-shadow: #00000033 2px 0 15px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.transaction__header h6 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3d42;
+}
+
+.transaction__profile img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.transaction__profile h6 {
+  color: #4d4b57;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.transaction__name span {
+  font-size: 14px;
+  color: #7a7886;
+}
+
+.total__transaction:nth-child(odd) {
+  color: green;
+}
+
+.total__transaction span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer {
+  background: #6379f4;
+  padding: 10px;
+  color: white;
+}
+
+.footer p {
+  display: inline;
+  margin: 0 20px 0 0;
+  font-size: 16px;
 }

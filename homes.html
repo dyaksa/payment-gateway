@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+      integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+      crossorigin="anonymous"
+    />
+    <link href="asset/css/style.css" rel="stylesheet" />
+    <link href="asset/css/media.css" rel="stylesheet" />
+    <title>Zwallet - Payment Gateway</title>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-ligth bg-white">
+        <a class="navbar-brand">
+          <h1>Zwallet</h1>
+        </a>
+        <figure
+          class="d-flex justify-content-beetween align-items-center"
+          id="header-profile"
+        >
+          <img
+            class="header_image__profile mr-3"
+            src="asset/img/profile.jpg"
+            alt="profile"
+          />
+          <section class="info__profile mr-4">
+            <span>Robert Chandler</span>
+            <span>+62 8139 3877 7946</span>
+          </section>
+          <i class="fa fa-bell-o"></i>
+        </figure>
+      </nav>
+    </header>
+    <main class="main__content mt-5" id="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <aside class="sidenav">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a href="#dashboard"
+                    ><i class="fa fa-qrcode"></i> Dashboard</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#transfer"><i class="fa fa-arrow-up"></i>Transfer</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#topup"><i class="fa fa-plus"></i>Top Up</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#profile"><i class="fa fa-user-o"></i>Profile</a>
+                </li>
+              </ul>
+              <div class="nav__signout">
+                <a href="#"><i class="fa fa-sign-out"></i>Logout</a>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-12">
+                <div
+                  class="d-flex justify-content-between align-items-center info__balance"
+                >
+                  <section class="balance">
+                    <span>Balance</span>
+                    <h2>Rp120.000</h2>
+                    <span>+62 813-9387-7946</span>
+                  </section>
+                  <section class="btn__action">
+                    <button class="btn btn-outline-primary btn-lg btn-block">
+                      <i class="mr-3 fa fa-arrow-up"></i>Transfer
+                    </button>
+                    <button class="btn btn-outline-primary btn-lg btn-block">
+                      <i class="mr-3 fa fa-arrow-down"></i>Top Up
+                    </button>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-7">
+                <div class="right__info">
+                  <div class="d-flex justify-content-between salary__info">
+                    <section class="income__info">
+                      <i class="fa fa-arrow-down"></i>
+                      <p>income</p>
+                      <h6>Rp2.120.000</h6>
+                    </section>
+                    <section class="expense__info">
+                      <i class="fa fa-arrow-up"></i>
+                      <p>Expense</p>
+                      <h6>Rp2.120.000</h6>
+                    </section>
+                  </div>
+                  <div class="chart__info mt-3">
+                    <canvas id="chart" width="100%" height="65px"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="transaction__info">
+                  <header
+                    class="d-flex justify-content-between transaction__header mb-5"
+                  >
+                    <h6>Transaction History</h6>
+                    <a href="#">See all</a>
+                  </header>
+                  <div class="user__transaction" id="user-transaction">
+                    <figure
+                      class="d-flex justify-content-between align-items-center transaction__profile mb-4"
+                    >
+                      <img src="./asset/img/profile.jpg" alt="profile" />
+                      <section class="transaction__name">
+                        <h6>Samuel Suhi</h6>
+                        <span>Transfer</span>
+                      </section>
+                      <section class="total__transaction">
+                        <span>+Rp50.000</span>
+                      </section>
+                    </figure>
+                    <figure
+                      class="d-flex justify-content-between align-items-center transaction__profile mb-4"
+                    >
+                      <img src="./asset/img/profile.jpg" alt="profile" />
+                      <section class="transaction__name">
+                        <h6>Samuel Suhi</h6>
+                        <span>Transfer</span>
+                      </section>
+                      <section class="total__transaction">
+                        <span>+Rp50.000</span>
+                      </section>
+                    </figure>
+                    <figure
+                      class="d-flex justify-content-between align-items-center transaction__profile mb-4"
+                    >
+                      <img src="./asset/img/netflix.png" alt="profile" />
+                      <section class="transaction__name">
+                        <h6>Samuel Suhi</h6>
+                        <span>Subscription</span>
+                      </section>
+                      <section class="total__transaction">
+                        <span>+Rp50.000</span>
+                      </section>
+                    </figure>
+                    <figure
+                      class="d-flex justify-content-between align-items-center transaction__profile mb-4"
+                    >
+                      <img src="./asset/img/profile.jpg" alt="profile" />
+                      <section class="transaction__name">
+                        <h6>Samuel Suhi</h6>
+                        <span>Transfer</span>
+                      </section>
+                      <section class="total__transaction">
+                        <span>+Rp50.000</span>
+                      </section>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="d-flex justify-content-around align-items-center footer mt-5"
+    >
+      <p>2020 Zwallet. All right reserved.</p>
+      <section class="info__company">
+        <p>+62 5637 8882 9901</p>
+        <p>contact@zwallet.com</p>
+      </section>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
+      integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
