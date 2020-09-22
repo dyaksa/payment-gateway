@@ -419,3 +419,17 @@ a.transaction__link:hover {
 .modal-header {
   border-bottom: none;
 }
+
+.transaction__notification {
+  text-align: center;
+}
+
+.transaction__notification i.fa {
+  font-size: 100px;
+}
+
+.transaction__notification h2 {
+  font-size: 22px;
+  color: #4d4b57;
+  font-weight: bold;
+}
