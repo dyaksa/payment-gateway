@@ -27,27 +27,25 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-ligth bg-white">
-        <a class="navbar-brand">
-          <h1>Zwallet</h1>
-        </a>
-        <figure
-          class="d-flex justify-content-beetween align-items-center"
-          id="header-profile"
-        >
-          <img
-            class="header_image__profile mr-3"
-            src="asset/img/profile.jpg"
-            alt="profile"
-          />
-          <section class="info__profile mr-4">
-            <span>Robert Chandler</span>
-            <span>+62 8139 3877 7946</span>
-          </section>
-          <i class="fa fa-bell-o"></i>
-        </figure>
-      </nav>
+    <header class="d-flex navbar navbar-ligth bg-white justify-content-between">
+      <a class="navbar-brand">
+        <h1>Zwallet</h1>
+      </a>
+      <figure
+        class="d-flex justify-content-beetween align-items-center"
+        id="header-profile"
+      >
+        <img
+          class="header_image__profile mr-3"
+          src="asset/img/profile.jpg"
+          alt="profile"
+        />
+        <section class="info__profile mr-4">
+          <span>Robert Chandler</span>
+          <span>+62 8139 3877 7946</span>
+        </section>
+        <i class="fa fa-bell-o"></i>
+      </figure>
     </header>
     <main class="main__content mt-5" id="main-content">
       <div class="container">
@@ -102,12 +100,12 @@
                 <div class="right__info">
                   <div class="d-flex justify-content-between salary__info">
                     <section class="income__info">
-                      <i class="fa fa-arrow-down"></i>
+                      <i class="text-success fa fa-arrow-down"></i>
                       <p>income</p>
                       <h6>Rp2.120.000</h6>
                     </section>
                     <section class="expense__info">
-                      <i class="fa fa-arrow-up"></i>
+                      <i class="text-danger fa fa-arrow-up"></i>
                       <p>Expense</p>
                       <h6>Rp2.120.000</h6>
                     </section>

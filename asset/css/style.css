@@ -8,9 +8,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
 }
+
 .container-login {
   box-shadow: #00000033 2px 0 15px;
   margin-top: 5%;
@@ -244,14 +254,6 @@ body {
   font-weight: bold;
 }
 
-.income__info i.fa-arrow-down {
-  color: green;
-}
-
-.expense__info i.fa-arrow-up {
-  color: red;
-}
-
 .transaction__info {
   box-shadow: #00000033 2px 0 15px;
   padding: 20px;
@@ -282,10 +284,6 @@ body {
   color: #7a7886;
 }
 
-.total__transaction:nth-child(odd) {
-  color: green;
-}
-
 .total__transaction span {
   font-weight: bold;
   font-size: 16px;
@@ -301,4 +299,123 @@ body {
   display: inline;
   margin: 0 20px 0 0;
   font-size: 16px;
+}
+
+.box__shadow {
+  box-shadow: #00000033 2px 0 15px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h3.history__header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3d42;
+}
+
+.transaction__history h5 {
+  color: #7a7886;
+  font-size: 16px;
+}
+
+.transaction__history h6 {
+  color: #4d4b57;
+}
+
+.transaction__history img {
+  width: 52px;
+  border-radius: 10px;
+}
+
+a.transaction__link:hover {
+  text-decoration: none;
+}
+
+.transaction__user {
+  box-shadow: #00000033 2px 0 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.transaction__user figure {
+  margin: 0;
+}
+
+.transaction__p {
+  padding: 30px 450px 20px 20px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7886;
+}
+
+.input__amount {
+  width: 100%;
+  padding: 0 20%;
+}
+
+.input__amount div:first-child input {
+  padding: 10%;
+  font-size: 42px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input__amount input:last-child {
+  font-size: 16px;
+  border: none;
+  border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
+  border-radius: 0;
+}
+
+.input__amount input:last-child:focus {
+  box-shadow: none;
+}
+
+.input__amount div:first-child input:focus {
+  box-shadow: none;
+  color: #6379f4;
+  transition: 0.5s;
+}
+
+.input__amount p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.transaction__box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3d42;
+}
+
+.transaction__box img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.transaction__box span {
+  display: block;
+  font-size: 16px;
+  color: #7a7886;
+  margin-bottom: 20px;
+}
+
+.transaction__box h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #514f5b;
+}
+
+.input__pin input {
+  margin: 10px;
+  text-align: center;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header {
+  border-bottom: none;
 }

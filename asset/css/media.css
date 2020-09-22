@@ -1,17 +1,2 @@
 @media screen and (max-width: 425px) {
-  .left {
-    display: none;
-  }
-
-  .nav__profile {
-    display: none;
-  }
-
-  .header__menu {
-    display: block;
-  }
-
-  .nav__white {
-    justify-content: center;
-  }
 }
