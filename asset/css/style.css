@@ -442,3 +442,11 @@ a.transaction__link:hover {
 .navbar-toggler i.fa {
   color: #ffff;
 }
+
+.offcanvas-header {
+  display: none;
+}
+
+.navbar-nav {
+  display: none;
+}
