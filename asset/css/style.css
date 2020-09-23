@@ -226,7 +226,7 @@ body {
   font-size: 14px;
 }
 
-.btn__action button {
+.btn__action a {
   color: white;
   border-color: #fff;
 }
@@ -436,8 +436,9 @@ a.transaction__link:hover {
 
 .navbar-toggler {
   background: #6379f4;
+  padding: 10px;
 }
 
-.navbar-toggler-icon {
-  color: white;
+.navbar-toggler i.fa {
+  color: #ffff;
 }
