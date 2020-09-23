@@ -21,10 +21,23 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="d-flex navbar navbar-ligth bg-white justify-content-between">
+    <header
+      class="navbar navbar-expand-lg d-flex navbar navbar-ligth bg-white justify-content-between"
+    >
       <a class="navbar-brand">
         <h1>Zwallet</h1>
       </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <figure
         class="d-flex justify-content-beetween align-items-center"
         id="header-profile"
@@ -44,7 +57,7 @@
     <main class="main__content mt-5" id="main-content">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-12 col-lg-3">
             <aside class="sidenav">
               <ul class="nav">
                 <li class="nav__item">
@@ -53,7 +66,9 @@
                   >
                 </li>
                 <li class="nav__item">
-                  <a href="#transfer"><i class="fa fa-arrow-up"></i>Transfer</a>
+                  <a href="/search.html"
+                    ><i class="fa fa-arrow-up"></i>Transfer</a
+                  >
                 </li>
                 <li class="nav__item">
                   <a href="#topup"><i class="fa fa-plus"></i>Top Up</a>
@@ -67,7 +82,7 @@
               </div>
             </aside>
           </div>
-          <div class="col-md-9">
+          <div class="col-lg-9 col-md-12">
             <div class="row">
               <div class="col-md-12">
                 <div
@@ -90,7 +105,7 @@
               </div>
             </div>
             <div class="row mt-3">
-              <div class="col-md-7">
+              <div class="col-md-12 col-lg-7">
                 <div class="right__info">
                   <div class="d-flex justify-content-between salary__info">
                     <section class="income__info">
@@ -109,13 +124,13 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-lg-5 col-md-12 transaction">
                 <div class="transaction__info">
                   <header
                     class="d-flex justify-content-between transaction__header mb-5"
                   >
                     <h6>Transaction History</h6>
-                    <a href="#">See all</a>
+                    <a href="/history.html">See all</a>
                   </header>
                   <div class="user__transaction" id="user-transaction">
                     <figure

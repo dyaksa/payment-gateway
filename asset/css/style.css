@@ -433,3 +433,11 @@ a.transaction__link:hover {
   color: #4d4b57;
   font-weight: bold;
 }
+
+.navbar-toggler {
+  background: #6379f4;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}

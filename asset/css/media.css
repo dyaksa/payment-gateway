@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  #header-profile {
+    display: none !important;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .info__balance {
+    display: block !important;
+  }
+
+  .btn__action {
+    margin-top: 15px;
+  }
+
+  .transaction {
+    margin-top: 20px;
+  }
+
+  .info__company {
+    display: none;
+  }
+
+  .input__amount {
+    padding: 0 5%;
+  }
+
+  .transaction__p {
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .transaction__box h6 {
+    font-size: 18px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .balance {
+    text-align: center;
+  }
+
+  .bg-white {
+    padding: 0 10%;
+  }
+}
